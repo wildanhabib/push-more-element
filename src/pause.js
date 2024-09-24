@@ -1,5 +1,9 @@
 import { LitElement, html, css } from 'https://cdn.jsdelivr.net/gh/lit/dist@2/core/lit-core.min.js';
 import "@haxtheweb/simple-cta/simple-cta.js";
+import { DDDSuper } from "@haxtheweb/d-d-d/d-d-d.js";
+import "@haxtheweb/multiple-choice/multiple-choice.js";
+import "@haxtheweb/grid-plate/grid-plate.js";
+
 
 class AnimatedPauseComponent extends LitElement {
   static properties = {

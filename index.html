@@ -32,7 +32,7 @@
 
 
 
-<animated-pause-component>
+<!-- <animated-pause-component>
   <div slot="content-1">
       <h2>Content 1</h2>
       <p>This is the first piece of content.</p>
@@ -70,10 +70,13 @@
       <h2>All Content 4</h2>
       <p>Finally, this is the fourth piece of all content.</p>
   </div>
-</modified-pause-component>
+</modified-pause-component> -->
 
+<multiple-choice single-option="true" question="Which is correct?" randomize="true">
+  <input type="checkbox" value="Correct answer" correct><input type="checkbox" value="Another option">
+</multiple-choice>
 
-<enhanced-pause-component>
+<enhanced-pause-component >
   <div slot="content-1">
       <h2>Content 1</h2>
       <p>This is the first piece of content.</p>
@@ -89,10 +92,13 @@
   <div slot="content-4">
       <h2>Content 4</h2>
       <p>Finally, this is the fourth piece of content.</p>
+
+
+
   </div>
 </enhanced-pause-component>
 
-<enhanced-multiple-choice 
+<!-- <enhanced-multiple-choice 
         single-option="true"
         question="Which of the following is a mammal?"
         randomize="true">
@@ -113,15 +119,32 @@
             <p>Penguin</p>
             <img src="/placeholder.svg?height=100&width=100" alt="Penguin">
         </web-element>
-    </enhanced-multiple-choice>
+    </enhanced-multiple-choice> -->
+
+    <!-- <pause-container> -->
+      <enhanced-pause-component labels="Content-1">
+          <p>This is the content for section 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </enhanced-pause-component>
+      <enhanced-pause-component labels="Content-2">
+          <p>Here's the content for section 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </enhanced-pause-component>
+      <enhanced-pause-component labels="Content-3">
+          <p>And this is the content for section 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+      </enhanced-pause-component>
+      <enhanced-pause-component labels="Content-4">
+          <p>Finally, this is the content for section 4. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+      </enhanced-pause-component>
+  <!-- </pause-container> -->
 
 
 <script type="module" src="./src/app-todo.js"></script>
 <script type="module" src="./src/todo-app-ai.js"></script>
 <script type="module" src="./src/pause.js"></script>
-<script type="module" src="./src/pausev2.js"></script>
-<script type="module" src="./src/pausev3.js"></script>
-<script type="module" src="./src/pausev4-multiple.js"></script>
+<!-- <script type="module" src="./src/pausev2.js"></script> -->
+<!-- <script type="module" src="./src/pausev3.js"></script> -->
+<!-- <script type="module" src="./src/pausev4-multiple.js"></script> -->
+<script type="module" src="./src/pausev5.js"></script>
+<script type="module" src="./src/pause-tambahan.js"></script>
 <!-- <script type="module" src="./src/pause.js"></script> -->
 </body>
 </html>
