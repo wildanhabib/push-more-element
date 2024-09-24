@@ -1,0 +1,84 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "text": "Complete project proposal",
+      "completed": false,
+      "important": true,
+      "myDay": true,
+      "planned": false
+    },
+    {
+      "id": "2",
+      "text": "Buy groceries",
+      "completed": false,
+      "important": false,
+      "myDay": true,
+      "planned": true
+    },
+    {
+      "id": "3",
+      "text": "Schedule team meeting",
+      "completed": true,
+      "important": true,
+      "myDay": false,
+      "planned": true
+    },
+    {
+      "id": "d22a",
+      "text": "dsadsa",
+      "completed": false,
+      "important": true,
+      "myDay": true,
+      "planned": false
+    },
+    {
+      "id": "d542",
+      "text": "dsa",
+      "completed": false,
+      "important": false,
+      "myDay": false,
+      "planned": false
+    },
+    {
+      "id": "94db",
+      "text": "fdsfds",
+      "completed": false,
+      "important": false,
+      "myDay": false,
+      "planned": false
+    },
+    {
+      "id": "fcf4",
+      "text": "fdsfsfsd",
+      "completed": false,
+      "important": true,
+      "myDay": false,
+      "planned": true
+    },
+    {
+      "id": "2f81",
+      "text": "assadsa",
+      "completed": false,
+      "important": false,
+      "myDay": true,
+      "planned": false
+    },
+    {
+      "id": "a0ee",
+      "text": "dsadsafdgfd",
+      "completed": false,
+      "important": false,
+      "myDay": true,
+      "planned": false
+    },
+    {
+      "id": "f8b3",
+      "text": "mnm,,m",
+      "completed": false,
+      "important": false,
+      "myDay": true,
+      "planned": false
+    }
+  ]
+}
