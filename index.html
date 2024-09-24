@@ -52,12 +52,76 @@
 
 </animated-pause-component>
 
-<simple-cta label="Click to learn more" link="https://haxtheweb.org/">
-</simple-cta>
+
+<modified-pause-component label="Show All">
+  <div slot="content-1">
+      <h2>All Content 1</h2>
+      <p>This is the first piece of all content.</p>
+  </div>
+  <div slot="content-2">
+      <h2>All Content 2</h2>
+      <p>Here's the second piece of all content.</p>
+  </div>
+  <div slot="content-3">
+      <h2>All Content 3</h2>
+      <p>And this is the third piece of all content.</p>
+  </div>
+  <div slot="content-4">
+      <h2>All Content 4</h2>
+      <p>Finally, this is the fourth piece of all content.</p>
+  </div>
+</modified-pause-component>
+
+
+<enhanced-pause-component>
+  <div slot="content-1">
+      <h2>Content 1</h2>
+      <p>This is the first piece of content.</p>
+  </div>
+  <div slot="content-2">
+      <h2>Content 2</h2>
+      <p>Here's the second piece of content.</p>
+  </div>
+  <div slot="content-3">
+      <h2>Content 3</h2>
+      <p>And this is the third piece of content.</p>
+  </div>
+  <div slot="content-4">
+      <h2>Content 4</h2>
+      <p>Finally, this is the fourth piece of content.</p>
+  </div>
+</enhanced-pause-component>
+
+<enhanced-multiple-choice 
+        single-option="true"
+        question="Which of the following is a mammal?"
+        randomize="true">
+        <web-element label="Option A">
+            <p>Dolphin</p>
+            <img src="/placeholder.svg?height=100&width=100" alt="Dolphin">
+        </web-element>
+        <web-element label="Option B">
+            <p>Shark</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur iusto delectus molestiae eligendi iure! Modi magnam exercitationem, quidem aut officiis ea natus sed placeat praesentium adipisci quas tempora odio optio.</p>
+            <p>Shark</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur iusto delectus molestiae eligendi iure! Modi magnam exercitationem, quidem aut officiis ea natus sed placeat praesentium adipisci quas tempora odio optio.</p>
+            <img src="/placeholder.svg?height=100&width=100" alt="Shark">
+        </web-element>
+        <web-element label="Option C">
+            <p>Octopus</p>
+            <img src="/placeholder.svg?height=100&width=100" alt="Octopus">
+        </web-element>
+        <web-element label="Option D">
+            <p>Penguin</p>
+            <img src="/placeholder.svg?height=100&width=100" alt="Penguin">
+        </web-element>
+    </enhanced-multiple-choice>
+
 
 <script type="module" src="./src/app-todo.js"></script>
 <script type="module" src="./src/todo-app-ai.js"></script>
 <script type="module" src="./src/pause.js"></script>
+<script type="module" src="./src/pausev2.js"></script>
+<script type="module" src="./src/pausev3.js"></script>
+<script type="module" src="./src/pausev4-multiple.js"></script>
 <!-- <script type="module" src="./src/pause.js"></script> -->
 </body>
 </html>
