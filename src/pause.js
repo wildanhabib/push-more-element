@@ -16,8 +16,23 @@ class AnimatedPauseComponent extends LitElement {
       margin: 0 auto;
       padding: 20px;
       background-color: #f0f0f0;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      /* border-radius: 8px; */
+      /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+/* tambahan baru dari ddd-theme-simple */
+
+      border-radius: var(--ddd-radius-xs);
+          --component-color: var(
+            --lowContrast-override,
+            var(
+              --ddd-theme-accent,
+              var(--ddd-theme-bgContrast, var(--ddd-theme-default-white))
+            )
+          );
+          --component-background-color: var(
+            --ddd-theme-primary,
+            var(--simple-colors-default-theme-green-7)
+          );
+          --component-border-color: var(--component-color);
     }
     .content {
       max-height: 0;
@@ -45,7 +60,8 @@ class AnimatedPauseComponent extends LitElement {
       box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
     .pause {
-      background-color: #008CBA;
+      background-color: var(--component-background-color, transparent);
+      font-weight: var(--ddd-font-weight-black);
       color: white;
       animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both infinite;
       transform: translate3d(0, 0, 0);
