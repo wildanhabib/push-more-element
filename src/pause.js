@@ -1,8 +1,4 @@
 import { LitElement, html, css } from 'https://cdn.jsdelivr.net/gh/lit/dist@2/core/lit-core.min.js';
-import "@haxtheweb/simple-cta/simple-cta.js";
-import { DDDSuper } from "@haxtheweb/d-d-d/d-d-d.js";
-import "@haxtheweb/multiple-choice/multiple-choice.js";
-import "@haxtheweb/grid-plate/grid-plate.js";
 
 
 class AnimatedPauseComponent extends LitElement {
@@ -14,11 +10,13 @@ class AnimatedPauseComponent extends LitElement {
 
   static styles = css`
     :host {
-      display: block;
+      /* display: block; */
       font-family: Arial, sans-serif;
       max-width: 600px;
       margin: 0 auto;
       padding: 20px;
+      margin: 0;
+      /* min-height: 500vh; */
       background-color: #f0f0f0;
       /* border-radius: 8px; */
       /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */

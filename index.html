@@ -6,8 +6,37 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="Description" content="Demonstration for app-todo">
+  <link rel="preload" href="./theme/theme.css" as="style">
+  <meta name="theme-color" content="#3f51b5">
 
-
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 98vh;
+      /* min-height: 50vh; */
+    }
+    haxcms-site-builder:not([theme-loaded]) * {
+      margin-top: 100px;
+      display: block;
+      max-width: 50vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    haxcms-site-builder[theme-loaded] .haxcms-theme-element:not(:defined) {
+      margin-top: 100px;
+    }
+    haxcms-site-builder[theme-loaded] .haxcms-theme-element:not(:defined) * {
+      max-width: 50vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    haxcms-site-builder[theme-loaded] .haxcms-theme-element:not(:defined) *:not(:defined) {
+      display: block;
+      min-height: 50px;
+      min-width: 50vh;
+    }
+  </style>
   <!-- <style>
     body {
         font-family: Arial, sans-serif;
@@ -25,104 +54,104 @@
 </head>
 
 <body>
-<!-- <app-todo title="Aplikasi Akan Todo">
-  <title> Aplikasi To Do</title>
-</app-todo>
-<microsoft-todo-clone></microsoft-todo-clone> -->
+<!-- <body no-js vocab="http://schema.org/" prefix="oer:http://oerschema.org cc:http://creativecommons.org/ns dc:http://purl.org/dc/terms/"> -->
+        <!-- <div id="loading">
+          <div class="messaging">
+            <div class="progress-line"></div>
+          </div>
+        </div> -->
+    <!-- <grid-plate layout="1" disable-responsive item-padding="16" item-margin="16">
+<p>Okkk</p>
+    </grid-plate> -->
+
+    <page-break break-type="site" title="Berpikir Kritis dan Dampak IT" item-id="item-341d3c77-5b03-486f-b890-4ac52f09f156"
+slug="welcome" description="Berpikir tentang&nbsp;akar penyebab masalah dan tren terkini, kita dapat mengambil langkah-langkah yang lebih efektif untuk melindungi diri dari ancaman keamanan siber.
+Keamanan jaringan adalah upaya" order="0" published="" depth="0" icon-type="hax:page-details"
+entity-type="page"></page-break>
 
 
-
-<!-- <animated-pause-component>
+<enhanced-pause-component>
   <div slot="content-1">
       <h2>Content 1</h2>
-      <p>This is the first piece of content.</p>
+      <div class="content b-sm bt-0 bs-lg" style="padding: var(--ddd-spacing-5) var(--ddd-spacing-3)
+      var(--ddd-spacing-5) var(--ddd-spacing-6); border-top: none; border-right-color: ; border-right-style: ; border-right-width: ; border-bottom-color: ; border-bottom-style: ; border-bottom-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; box-shadow: var(--ddd-boxShadow-lg);">
+<div class="slot" role="textbox" data-hax-lock="data-hax-lock"><span>Setelah mempelajari materi Berpikir Kritis Diagram Tulang Ikan (Fish</span><span>bone) siswa akan ...</span>
+
+<br>
+<br><span>1. memahami konsep dasar tentang berpikir kritis keamanan data</span>
+
+</div>
+<div class="slot" role="textbox"><span>Siswa dapat menjelaskan fungsinya berpikir kritis tentang keamanan data</span>
+
+</div>
+<div class="slot">
+<br>
+<ol style="display: flex; flex-flow: column; gap: var(--ddd-spacing-3); margin: 0 0 var(--ddd-spacing-6) 0;">
+  <li style="font-family: var(--ddd-font-primary); font-size: var(--ddd-theme-body-font-size);">Siswa dapat mengidentifikasi langkah-langkah berpikir kritis</li>
+</ol>
+</div>
+</div>
+<!-- <p> -->
   </div>
   <div slot="content-2">
-      <h2>Content 2</h2>
-      <p>Here's the second piece of content.</p>
+    <p style="margin: var(--ddd-spacing-6) 0; color: rgb(0, 0, 0); font-family: Roboto, &quot;Franklin Gothic Medium&quot;, Tahoma, sans-serif; font-size: 20px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Berpikir tentang&nbsp;akar penyebab masalah dan tren terkini, kita dapat mengambil
+      langkah-langkah yang lebih efektif untuk melindungi diri dari ancaman keamanan siber.</p>
+    
+      <p
+    style="margin: var(--ddd-spacing-6) 0; color: rgb(0, 0, 0); font-family: Roboto, &quot;Franklin Gothic Medium&quot;, Tahoma, sans-serif; font-size: 20px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Keamanan jaringan adalah upaya untuk melindungi sistem komputer dan jaringan dari
+      akses, penggunaan, pengungkapan, gangguan, modifikasi, atau penghancuran informasi
+      yang tidak sah. Singkatnya, ini adalah upaya untuk menjaga keamanan data dan sistem
+      kita.</p>
   </div>
   <div slot="content-3">
-      <h2>Content 3</h2>
-      <p>And this is the third piece of content.</p>
+    <rpg-character seed="btopro" accent-color="orange" accessories="7" height="142"
+    width="113" base="0" face="2" face-item="1" hair="5" pants="5" shirt="5" skin="0"
+    hat-color="1" hat="none" leg="L" speed="500" reduce-motion=""></rpg-character>
+    <rpg-character accent-color="orange" seed="8cjljqi8od" accessories="2"
+    height="142" width="113" base="1" face="1" face-item="3" hair="6" pants="0" shirt="9"
+    skin="0" hat-color="2" hat="none" leg="L" speed="100" walking="" fire="" reduce-motion=""></rpg-character>
+    <rpg-character seed="haxtheweb" accent-color="orange" accessories="9"
+    height="142" width="113" base="0" face="1" face-item="8" hair="2" pants="2" shirt="0"
+    skin="8" hat-color="0" hat="none" leg="L" speed="500" reduce-motion=""></rpg-character>
+    <rpg-character accent-color="orange" seed="6nw4egrs3z" accessories="1"
+    height="142" width="113" base="1" face="4" face-item="3" hair="0" pants="9" shirt="1"
+    skin="4" hat-color="5" hat="none" leg="R" speed="500" reduce-motion=""></rpg-character>
+    <rpg-character accent-color="orange" seed="hgnuh6pvap" accessories="6"
+    height="142" width="113" base="0" face="2" face-item="8" hair="8" pants="1" shirt="3"
+    skin="1" hat-color="3" hat="none" leg="R" speed="500" reduce-motion=""></rpg-character>
+  </p>
   </div>
   <div slot="content-4">
       <h2>Content 4</h2>
       <p>Finally, this is the fourth piece of content.</p>
-  </div>
+  
+      <tagging-question question="What does the fox say?" data-primary="15">
+        <input type="checkbox" value="DingDingDing" correct="correct">
+        <input type="checkbox" value="PaPaPower" correct="correct">
+        <input type="checkbox" value="Moo">
+      </tagging-question>
 
-</animated-pause-component>
-
-
-<modified-pause-component label="Show All">
-  <div slot="content-1">
-      <h2>All Content 1</h2>
-      <p>This is the first piece of all content.</p>
-  </div>
-  <div slot="content-2">
-      <h2>All Content 2</h2>
-      <p>Here's the second piece of all content.</p>
-  </div>
-  <div slot="content-3">
-      <h2>All Content 3</h2>
-      <p>And this is the third piece of all content.</p>
-  </div>
-  <div slot="content-4">
-      <h2>All Content 4</h2>
-      <p>Finally, this is the fourth piece of all content.</p>
-  </div>
-</modified-pause-component> -->
-
-<multiple-choice single-option="true" question="Which is correct?" randomize="true">
-  <input type="checkbox" value="Correct answer" correct><input type="checkbox" value="Another option">
-</multiple-choice>
-
-<enhanced-pause-component >
-  <div slot="content-1">
-      <h2>Content 1</h2>
-      <p>This is the first piece of content.</p>
-  </div>
-  <div slot="content-2">
-      <h2>Content 2</h2>
-      <p>Here's the second piece of content.</p>
-  </div>
-  <div slot="content-3">
-      <h2>Content 3</h2>
-      <p>And this is the third piece of content.</p>
-  </div>
-  <div slot="content-4">
-      <h2>Content 4</h2>
       <p>Finally, this is the fourth piece of content.</p>
-
-
 
   </div>
 </enhanced-pause-component>
 
-<!-- <enhanced-multiple-choice 
-        single-option="true"
-        question="Which of the following is a mammal?"
-        randomize="true">
-        <web-element label="Option A">
-            <p>Dolphin</p>
-            <img src="/placeholder.svg?height=100&width=100" alt="Dolphin">
-        </web-element>
-        <web-element label="Option B">
-            <p>Shark</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur iusto delectus molestiae eligendi iure! Modi magnam exercitationem, quidem aut officiis ea natus sed placeat praesentium adipisci quas tempora odio optio.</p>
-            <p>Shark</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur iusto delectus molestiae eligendi iure! Modi magnam exercitationem, quidem aut officiis ea natus sed placeat praesentium adipisci quas tempora odio optio.</p>
-            <img src="/placeholder.svg?height=100&width=100" alt="Shark">
-        </web-element>
-        <web-element label="Option C">
-            <p>Octopus</p>
-            <img src="/placeholder.svg?height=100&width=100" alt="Octopus">
-        </web-element>
-        <web-element label="Option D">
-            <p>Penguin</p>
-            <img src="/placeholder.svg?height=100&width=100" alt="Penguin">
-        </web-element>
-    </enhanced-multiple-choice> -->
+<!-- <h-a-x element-align="left" app-store='{"url": "./appstore.json"}'>
+    <p>Kamu dapat edit this by hitting the edit pencil. This is an example of HAX
+    running as a stand alone text editor. Think of this implementation more inline
+    with what you expect from a block editor by itself as opposed to full CMS</p>
+    <p>
+      You can learn more about <a href="https://oer.hax.psu.edu/bto108/sites/haxcellence/documentation/hax-frontend-devs" target="_blank">all things HAX in our documentation site</a>. The ecosystem is dense and highly flexible.
+    </p>
+    <person-testimonial accent-color="blue" image="https://github.com/btopro.png" name="bto-pro" position="Coffee drinker">
+      <p>I at times, enjoy coffee. Those times, are all times.</p>
+    </person-testimonial>
+  </h-a-x> -->
+  
+  <!-- <script type="module" src="https://cdn.hax.cloud/cdn/build/es6/node_modules/@haxtheweb/tagging-question/tagging-question.js"></script> -->
 
     <!-- <pause-container> -->
-      <enhanced-pause-component labels="Content-1">
+      <!-- <enhanced-pause-component labels="Content-1">
           <p>This is the content for section 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </enhanced-pause-component>
       <enhanced-pause-component labels="Content-2">
@@ -133,18 +162,26 @@
       </enhanced-pause-component>
       <enhanced-pause-component labels="Content-4">
           <p>Finally, this is the content for section 4. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-      </enhanced-pause-component>
+      </enhanced-pause-component> -->
   <!-- </pause-container> -->
 
 
-<script type="module" src="./src/app-todo.js"></script>
-<script type="module" src="./src/todo-app-ai.js"></script>
-<script type="module" src="./src/pause.js"></script>
+<!-- <script type="module" src="./src/app-todo.js"></script>
+<script type="module" src="./src/todo-app-ai.js"></script> -->
+<!-- <script type="module" src="./src/pause.js"></script> -->
 <!-- <script type="module" src="./src/pausev2.js"></script> -->
 <!-- <script type="module" src="./src/pausev3.js"></script> -->
 <!-- <script type="module" src="./src/pausev4-multiple.js"></script> -->
 <script type="module" src="./src/pausev5.js"></script>
-<script type="module" src="./src/pause-tambahan.js"></script>
+<script type="module" src="./src/index.js"></script>
+
+<!-- <script type="module" src="./src/pause-tambahan.js"></script> -->
 <!-- <script type="module" src="./src/pause.js"></script> -->
+<!-- <haxcms-site-builder id="site" file="site.json?2GQKWcJ3ni0xrL2X4_Dw_Sr9SeXqY2Sk3XblmvHVArA"></haxcms-site-builder> -->
+
+<!-- <script>window.HAXCMSContext="11ty";document.body.removeAttribute('no-js');window.__appCDN="https://cdn.webcomponents.psu.edu/cdn/";</script>
+<script src="/build.js"></script>
+<script src="/build-haxcms.js"></script> -->
+
 </body>
 </html>

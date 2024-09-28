@@ -1,6 +1,7 @@
 import { LitElement, html, css } from 'https://cdn.jsdelivr.net/gh/lit/dist@2/core/lit-core.min.js';
 
 
+
 class EnhancedPauseComponent extends LitElement {
   static properties = {
     visibleContent: { type: Number },
@@ -13,10 +14,12 @@ class EnhancedPauseComponent extends LitElement {
     :host {
       display: block;
       font-family: Arial, sans-serif;
-      max-width: 600px;
+      max-width: 800px;
+      /* max-height: 100%; */
+      /* min-height: 500vh; */
       margin: 0 auto;
       padding: 20px;
-      background-color: #f0f0f0;
+      background-color: #dceb89;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
@@ -26,7 +29,8 @@ class EnhancedPauseComponent extends LitElement {
       transition: max-height 0.7s ease-out;
     }
     .content.visible {
-      max-height: 500px;
+      max-height: 100%;
+      /* max-height: 100px; Adjust this value if needed */
     }
     .button-container {
       display: flex;
@@ -74,10 +78,11 @@ class EnhancedPauseComponent extends LitElement {
       transition: all 0.3s ease;
     }
     .show-all.visible {
-      display: inline-block;
+      display: block;
+      overflow: hidden;
     }
     .show-all:hover {
-      background-color: #38a169;
+      background-color: #dbeeb7;
     }
   `;
 
@@ -123,7 +128,7 @@ class EnhancedPauseComponent extends LitElement {
     if (this.visibleContent < this.labels.length) {
       this.visibleContent++;
     } else {
-      this.visibleContent = 1;
+      this.visibleContent = 4;
       this.showButtons = false;
     }
   }
